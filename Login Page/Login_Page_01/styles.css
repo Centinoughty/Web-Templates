@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.container > .login {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    text-align: center;
+}
+
+.login > img {
+    margin: 30px auto 0px auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.login > .group > input {
+    width: 400px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+.group {
+    height: 35px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.group.group-2 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.forgot {
+    text-align: right;
+}
+
+.forgot > a {
+    text-decoration: none;
+    color: purple;
+}
+
+.forgot > a:hover {
+    font-weight: bold;
+    color: orange;
+    cursor: pointer;
+}
+
+.button > button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.button > button:not(:hover) {
+    box-shadow: none!important;
+}
+
+.group {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	.label {
+		font-size: 15px;
+        font-weight: bold;
+		color: grey;
+		position: absolute;
+		pointer-events: none;
+		top: 9px;
+		left: 12px;
+		transition: all 0.1s ease;
+	}
+
+	.input:focus ~ .label,
+	.input:not(:focus):valid ~ .label {
+		top: -15px;
+		bottom: 0px;
+		left: 0px;
+		font-size: 13px;
+        font-weight: normal;
+		opacity: 1;
+		color: grey;
+	}
+}
+
+input.input {
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+
+.group.group-2 > input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 3000;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    background-color: orange;
+    border: none;
+    border-radius: 50px;
+    font-size: large;
+    color: white;
+    letter-spacing: 2px;
+}
